@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: fetchly
+Version: 0.1.0
+Summary: A lightweight Python HTTP library with retries, timeouts, and automatic headers
+Author: Sudhamsh Kalaonda
+Author-email: sudhamshguptha14@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

@@ -1,0 +1,8 @@
+README.md
+setup.py
+fetchly/__init__.py
+fetchly.egg-info/PKG-INFO
+fetchly.egg-info/SOURCES.txt
+fetchly.egg-info/dependency_links.txt
+fetchly.egg-info/requires.txt
+fetchly.egg-info/top_level.txt
