@@ -1,39 +1,51 @@
-# Fetchly
+# Fetchly 🚀
 
-A lightweight Python HTTP library with automatic retries, timeouts, and headers.
+> The simplest, safest way to make HTTP requests in Python.
+
+![PyPI version](https://img.shields.io/pypi/v/fetchly)
+![Downloads](https://img.shields.io/pypi/dm/fetchly)
+![License](https://img.shields.io/pypi/l/fetchly)
+![Python](https://img.shields.io/pypi/pyversions/fetchly)
+
+## Why Fetchly?
+
+Every Python developer writes this same boilerplate over and over:
+
+Without fetchly - 15 lines every single time
+With fetchly - 2 lines, always.
 
 ## Installation
 
-```bash
 pip install fetchly
-```
 
-## Usage
+## Quick Start
 
-```python
 import fetchly
 
-# Set headers once
+# Set your API key once - works for every request automatically
 fetchly.set_headers({"Authorization": "Bearer your_api_key"})
 
-# GET request
-response = fetchly.get("https://api.example.com/data")
+# GET
+response = fetchly.get("https://api.example.com/users")
 print(response.json())
 
-# POST request
-response = fetchly.post("https://api.example.com/data", json={"name": "John"})
+# POST
+response = fetchly.post("https://api.example.com/users", json={"name": "John"})
 print(response.json())
 
-# PUT request
-response = fetchly.put("https://api.example.com/data/1", json={"name": "Jane"})
+# PUT
+fetchly.put("https://api.example.com/users/1", json={"name": "Jane"})
 
-# DELETE request
-response = fetchly.delete("https://api.example.com/data/1")
-```
+# DELETE
+fetchly.delete("https://api.example.com/users/1")
 
 ## Features
 
-- Automatic retries (default: 3)
-- Timeout protection (default: 10 seconds)
+- Automatic timeout (10s default)
+- Automatic retries (3 retries default)
 - Clean error messages
 - Set headers once, works everywhere
+
+## License
+
+MIT - Sudhamsh Kalakonda
