@@ -1,4 +1,4 @@
-# Fetchly 🚀
+# Fetchly 
 
 > The simplest, safest way to make HTTP requests in Python.
 
